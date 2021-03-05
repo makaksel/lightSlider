@@ -1,0 +1,133 @@
+/* slider-wrp использую для тестового отображения слайдера*/
+body{
+    background-color: #222;
+}
+
+.slider-wrp{
+    width: 350px;
+    height: 230px;
+    margin: 150px auto;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    overflow: hidden;
+}
+
+.slider-wrp .light-slider{
+    height: 230px;
+}
+
+
+
+
+/* todo стили стайдера все стили указаны относительно родительского класса light-slider*/
+.light-slider {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    width: auto;
+    height: 160px;
+    justify-content: center;
+    
+}
+
+.light-slider .light-slider__img-wrp {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    transition: visibility 0.5s ease-in-out;
+    -webkit-transition: visibility 0.5s ease-in-out;
+    -moz-transition: visibility 0.5s ease-in-out;
+    -ms-transition: visibility 0.5s ease-in-out;
+    -o-transition: visibility 0.5s ease-in-out;
+}
+
+.light-slider .light-slider__img-wrp .light-slider__img {
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+}
+
+.light-slider .light-slider__img-wrp .light-slider__img.active {
+    visibility: visible;
+}
+
+
+.light-slider .light-slider__prev-img,
+.light-slider .light-slider__next-img {
+    z-index: 5000;
+    position: absolute;
+    font-size: 65px;
+    color: #fff;
+    opacity: 0.8;
+    align-self: center;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+}
+
+.light-slider .light-slider__prev-img:hover,
+.light-slider .light-slider__next-img:hover {
+    opacity: 1;
+}
+
+.light-slider .light-slider__prev-img.disable,
+.light-slider .light-slider__next-img.disable {
+    visibility: hidden;
+}
+
+.light-slider .light-slider__prev-img {
+    left: -30px;
+}
+
+.light-slider .light-slider__next-img {
+    right: -30px;
+}
+
+.light-slider .light-slider__thumbs {
+    z-index: 5000;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.light-slider  .light-slider__thumb.active {
+    opacity: 1;
+}
+
+.light-slider  .light-slider__thumb {
+    content: '';
+    opacity: 0.7;
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    color: #ffffff;
+    width: 60px;
+    height: 5px;
+    background-color: #FFFFFF;
+    transform: skew(150deg);
+    margin: 0 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+
+}

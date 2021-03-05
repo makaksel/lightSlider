@@ -1,0 +1,59 @@
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link type="text/css" href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="slider-wrp">
+        <!--TODO слайдер -->
+        <!-- контейнер. в атрибутах переданы количество фотографий и укзание на слайд который выведен-->
+        <div class="light-slider" data-length="4" data-active="1">
+            <!-- кнопка назад -->
+            <div class="light-slider__prev-img disable">〈</div>
+
+            <!-- контейнер для картинок, класс актив указывает на оторбражаемый слайд -->
+            <div class="light-slider__img-wrp">
+                <img class="light-slider__img lazyload active"
+                    data-src="https://edem-v-gosti.ru/upload/resize_cache/iblock/36e/350_230_2/akvamarin_v_gelendzhike0.jpg"
+                    alt="">
+                <img class="light-slider__img lazyload"
+                    data-src="https://edem-v-gosti.ru/upload/resize_cache/iblock/c9e/300_200_2/akvamarin_v_geledzhike_2.JPG"
+                    alt="">
+                <img class="light-slider__img lazyload"
+                    data-src="https://edem-v-gosti.ru/upload/resize_cache/iblock/912/300_200_2/akvamarin_v_geledzhike_3.JPG"
+                    alt="">
+                <img class="light-slider__img lazyload"
+                    data-src="https://edem-v-gosti.ru/upload/resize_cache/iblock/c0a/300_200_2/akvamarin_v_gelendzhike_00005.jpg"
+                    alt="">
+            </div>
+
+            <!-- кнопка кнопка вперед -->
+            <div class="light-slider__next-img">〉</div>
+
+            <!-- контейнер для полосок навигации слайдо, класс актив указывает на оторбражаемый слайд -->
+            <div class="light-slider__thumbs">
+                <div class="light-slider__thumb active"></div>
+                <div class="light-slider__thumb"></div>
+                <div class="light-slider__thumb"></div>
+                <div class="light-slider__thumb"></div>
+            </div>
+        </div>
+        <!--TODO слайдер -->
+
+    </div>
+    
+
+    
+
+    <script src="js/lazysizes.min.js" async=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
